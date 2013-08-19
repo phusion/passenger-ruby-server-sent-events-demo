@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head> 
+    <title>Server Sent Events demo with Phusion Passenger</title> 
+    <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> 
+  </head>
+  <body>
+  	<p>This app demonstrates Phusion Passenger's support for Server Side Events. Every second, the server sends us a random number. See README.md for more information.</p>
+  	<ul id="numbers">
+  	</ul>
+    <script>
+      var es = new EventSource('/stream');
+      es.onmessage = function(e) {
+        $('<li></li>').
+          text(e.data).
+          appendTo('#numbers');
+      };
+    </script>
+  </body>
+</html>
