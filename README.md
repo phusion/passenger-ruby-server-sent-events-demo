@@ -14,7 +14,7 @@ Then visit http://127.0.0.1:3000/
 
  * This app uses plain Rack, and thus is framework agnostic.
  * Server Side Events works on Phusion Passenger for Apache, Phusion Passenger for Nginx and Phusion Passenger Standalone.
- * At least version 4.0.0 of Phusion Passenger is required.
+ * At least version 4.0.5 of Phusion Passenger is required.
 
 ## Multithreading and performance
 
