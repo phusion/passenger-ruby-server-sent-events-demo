@@ -1,7 +1,7 @@
 class Stream
   def each
     5.times do
-      yield "data: " + rand(10000).to_s + "\r\n\r\n"
+      yield "data: " + rand(10000).to_s + "\n\n"
       sleep 1
     end
   end
