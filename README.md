@@ -29,3 +29,7 @@ Nginx:
 
     passenger_concurrency_model thread
     passenger_thread_count 64
+
+## Feedback
+
+Please join [the discussion forum](http://groups.google.com/group/phusion-passenger) if you have questions or feedback about this demo.
